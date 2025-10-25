@@ -9,7 +9,7 @@ categories: ["Java"]
 slug: "java-class-object"
 ---
 
-{{< figure src="img/java.png" alt="Java logo" caption="Logo ngôn ngữ Java" >}}
+{{< figure src="./img/java.png" alt="Java logo" caption="Logo ngôn ngữ Java" >}}
 
 Xin chào các bạn đã quay trở lại với series "Chinh phục Java từ con số 0"! Trong các bài học trước, chúng ta đã học cách ra lệnh cho máy tính lưu trữ dữ liệu, đưa ra quyết định và lặp lại công việc. Về cơ bản, chúng ta đã viết code theo lối "tuần tự" - một danh sách các hướng dẫn từ trên xuống dưới.
 

@@ -9,7 +9,7 @@ categories: ["JavaScript"]
 slug: "javascript-bien-kieu-du-lieu"
 ---
 
-{{< figure src="img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
+{{< figure src="./img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
 
 ## Bài 2: Biến (var, let, const) và "Trí nhớ" của JavaScript 💾
 

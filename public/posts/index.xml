@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on HuyVinh&#39;s Blog</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://nguyenhuyvinh12a15-unclevinh.github.io/posts/</link>
     <description>Recent content in Posts on HuyVinh&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <copyright>HuyVinh&#39;s Blog © 2025</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nguyenhuyvinh12a15-unclevinh.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

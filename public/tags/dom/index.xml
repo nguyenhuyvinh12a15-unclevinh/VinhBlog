@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DOM on HuyVinh&#39;s Blog</title>
-    <link>http://localhost:1313/tags/dom/</link>
+    <link>https://nguyenhuyvinh12a15-unclevinh.github.io/tags/dom/</link>
     <description>Recent content in DOM on HuyVinh&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <copyright>HuyVinh&#39;s Blog © 2025</copyright>
     <lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/dom/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nguyenhuyvinh12a15-unclevinh.github.io/tags/dom/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bài 6: Sức mạnh của Mảng (Arrays) - Lưu trữ và xử lý danh sách</title>
-      <link>http://localhost:1313/posts/javascript/javascript-mang-arrays/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/posts/javascript/javascript-mang-arrays/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/javascript/javascript-mang-arrays/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/posts/javascript/javascript-mang-arrays/</guid>
       <description></description>
     </item>
     <item>
       <title>Bài 5: Bắt sự kiện (Events) - Khiến trang web tương tác</title>
-      <link>http://localhost:1313/posts/javascript/javascript-events/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/posts/javascript/javascript-events/</link>
       <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/javascript/javascript-events/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/posts/javascript/javascript-events/</guid>
       <description></description>
     </item>
     <item>
       <title>Bài 4: Giới thiệu về DOM - Khi JavaScript gặp HTML</title>
-      <link>http://localhost:1313/posts/javascript/javascript-dom-interaction/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/posts/javascript/javascript-dom-interaction/</link>
       <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/javascript/javascript-dom-interaction/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/posts/javascript/javascript-dom-interaction/</guid>
       <description></description>
     </item>
   </channel>

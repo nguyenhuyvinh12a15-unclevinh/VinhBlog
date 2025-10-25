@@ -1,0 +1,807 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="vi"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f9fafb" />
+  
+  <title> &middot; Congo</title>
+    <meta name="title" content=" &middot; Congo" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/css/main.bundle.min.3b61a055e4493f5f37d7ca11cd1b0ed3fe817d908eeacda652d61ded7694d026.css"
+    integrity="sha256-O2GgVeRJP18318oRzRsO0/6BfZCO6s2mUtYd7XaU0CY="
+  />
+  
+    
+    
+    
+  
+  
+  
+    
+    
+  
+  
+    
+    
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="http://localhost:1313/js/main.bundle.min.c1722f6420267c6804668eae9dcb2657491f19c59c7c8943ba5300df8f72101d.js"
+      integrity="sha256-wXIvZCAmfGgEZo6uncsmV0kfGcWcfIlDulMA349yEB0="
+      data-copy="Sao chép"
+      data-copied="Đã sao chép"
+    ></script>
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        
+      
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/posts/javascript/4_dom-interaction-js/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/javascript/4_dom-interaction-js/">
+  <meta property="og:site_name" content="Congo">
+  <meta property="og:title" content="Congo">
+  <meta property="og:description" content="My awesome website">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Congo">
+  <meta name="twitter:description" content="My awesome website">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "",
+    "headline": "",
+    
+    
+    "inLanguage": "vi",
+    "url" : "http:\/\/localhost:1313\/posts\/javascript\/4_dom-interaction-js\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Huy Vĩnh"
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1129"
+  }
+  </script>
+    
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Chào Mừng Đến Với Blog Của Huy Vĩnh! Tada",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/posts/javascript/",
+       "name": "Java Script Là Gì? Ngôn Ngữ Giúp Trang Web Của Bạn \"Sống Dậy\"",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Huy Vĩnh" />
+  
+  
+    
+      <link href="mailto:nguyenhuyvinh12a5@gmail.com" rel="me" />
+    
+      <link href="https://facebook.com/zinhzinhtrasV" rel="me" />
+    
+      <link href="https://github.com/nguyenhuyvinh12a15-unclevinh" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Chuyển đến nội dung chính</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="z-40 flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Congo</a
+  >
+
+    </div>
+    
+      
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span></span
+              >
+            </li>
+            
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/about/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Giới thiệu</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/posts/"
+                      title="Posts"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Blog</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href=""
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Chủ đề</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/tags/"
+                      title="Tags"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Tags</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+                      <button
+                        id="search-button-1"
+                        title="Tìm kiếm (/)"
+                      >
+                        
+                          <span
+                            class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                          ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </button>
+                    
+                  
+                </li>
+              
+                
+                  
+              
+            
+          </ul>
+        </div>
+      </label>
+      
+      <ul class="hidden list-none flex-row text-end sm:flex">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/about/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Giới thiệu</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/posts/"
+                  title="Posts"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Blog</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href=""
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Chủ đề</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/tags/"
+                  title="Tags"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Tags</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                
+                
+                  <button
+                    id="search-button-2"
+                    title="Tìm kiếm (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+            
+              
+          
+
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span title="Thời gian đọc">6 phút</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Mục lục
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#bài-4-giới-thiệu-về-dom---khi-javascript-gặp-html-">Bài 4: Giới thiệu về DOM - Khi JavaScript gặp HTML 🤝</a></li>
+    <li><a href="#bài-4-giới-thiệu-về-dom---khi-javascript-gặp-html--1">Bài 4: Giới thiệu về DOM - Khi JavaScript gặp HTML 🤝</a></li>
+    <li><a href="#dom-là-gì">DOM là gì?</a></li>
+    <li><a href="#1-truy-xuất-phần-tử-selecting-elements">1. Truy xuất phần tử (Selecting Elements)</a>
+      <ul>
+        <li><a href="#documentgetelementbyidid-cua-ban">document.getElementById(&lsquo;id-cua-ban&rsquo;)</a></li>
+        <li><a href="#documentqueryselectorselector">document.querySelector(&lsquo;selector&rsquo;)</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-thay-đổi-nội-dung-changing-content">2. Thay đổi nội dung (Changing Content)</a>
+      <ul>
+        <li><a href="#textcontent">.textContent</a></li>
+        <li><a href="#innerhtml">.innerHTML</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-thay-đổi-thuộc-tính-và-style-attributes--css">3. Thay đổi thuộc tính và Style (Attributes &amp; CSS)</a></li>
+    <li><a href="#tổng-kết">Tổng kết</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <h2 id="bài-4-giới-thiệu-về-dom---khi-javascript-gặp-html-" class="relative group">Bài 4: Giới thiệu về DOM - Khi JavaScript gặp HTML 🤝 </h2><p>title: &ldquo;Bài 4: Giới thiệu về DOM - Khi JavaScript gặp HTML&rdquo;
+date: 2024-05-26
+description: &ldquo;Tìm hiểu về DOM (Document Object Model), cách JavaScript truy xuất (getElementById, querySelector) và thay đổi nội dung (textContent, innerHTML), style của các phần tử HTML.&rdquo;
+series: [&ldquo;Làm chủ JavaScript&rdquo;]
+tags: [&ldquo;JavaScript&rdquo;, &ldquo;DOM&rdquo;, &ldquo;HTML&rdquo;, &ldquo;Cơ bản&rdquo;]
+categories: [&ldquo;Lập trình&rdquo;]
+slug: &ldquo;javascript-dom-interaction&rdquo;</p>
+<hr>
+<h2 id="bài-4-giới-thiệu-về-dom---khi-javascript-gặp-html--1" class="relative group">Bài 4: Giới thiệu về DOM - Khi JavaScript gặp HTML 🤝 </h2><p>Chào mừng bạn đã quay trở lại! Chúng ta đã học về Biến (lưu trữ) và Hàm (hành động). Nhưng cho đến giờ, mã JavaScript của chúng ta vẫn chạy &ldquo;ngầm&rdquo; bên trong console. Làm thế nào để JavaScript có thể tương tác, thay đổi những gì người dùng nhìn thấy trên trang web (như thay đổi một dòng chữ, ẩn/hiện một hình ảnh)?</p>
+<p>Câu trả lời chính là DOM.</p>
+<p>DOM là gì?</p>
+<h2 id="dom-là-gì" class="relative group">DOM là gì? </h2><p>DOM là viết tắt của Document Object Model (Mô hình Đối tượng Tài liệu).</p>
+<p>Nghe phức tạp vậy, nhưng bạn có thể hiểu đơn giản:</p>
+<p>Khi trình duyệt tải tệp HTML của bạn, nó sẽ tạo ra một &ldquo;bản đồ&rdquo; dạng cây biểu diễn cấu trúc của trang web đó. &ldquo;Bản đồ&rdquo; này được gọi là DOM. JavaScript có thể đọc và thay đổi &ldquo;bản đồ&rdquo; này, và khi &ldquo;bản đồ&rdquo; thay đổi, những gì người dùng thấy trên trang web cũng sẽ thay đổi theo.</p>
+<p>Hãy xem cấu trúc cây của một file HTML đơn giản:
+Hãy xem cấu trúc cây của một file HTML đơn giản.</p>
+<p>HTML:</p>
+<p><strong>HTML:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Trang của tôi<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Tiêu đề chính<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Một đoạn văn.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Cây DOM (minh họa):</p>
+<p><strong>Cây DOM (minh họa):</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Document
+</span></span><span class="line"><span class="cl">└── html
+</span></span><span class="line"><span class="cl">├── head
+</span></span><span class="line"><span class="cl">│ └── title
+</span></span><span class="line"><span class="cl">│ └── &#34;Trang của tôi&#34;
+</span></span><span class="line"><span class="cl">└── body
+</span></span><span class="line"><span class="cl">├── h1
+</span></span><span class="line"><span class="cl">│ └── &#34;Tiêu đề chính&#34;
+</span></span><span class="line"><span class="cl">└── p
+</span></span><span class="line"><span class="cl">└── &#34;Một đoạn văn.&#34;
+</span></span><span class="line"><span class="cl">    ├── head
+</span></span><span class="line"><span class="cl">    │   └── title
+</span></span><span class="line"><span class="cl">    │       └── &#34;Trang của tôi&#34;
+</span></span><span class="line"><span class="cl">    └── body
+</span></span><span class="line"><span class="cl">        ├── h1
+</span></span><span class="line"><span class="cl">        │   └── &#34;Tiêu đề chính&#34;
+</span></span><span class="line"><span class="cl">        └── p
+</span></span><span class="line"><span class="cl">            └── &#34;Một đoạn văn.&#34;
+</span></span></code></pre></div><p>Đối với JavaScript, document là đối tượng gốc, và mọi thứ (như head, body, h1, p) đều là các nút (nodes) trên cây mà nó có thể truy cập.</p>
+<ol>
+<li>Truy xuất phần tử (Selecting Elements)</li>
+</ol>
+<h2 id="1-truy-xuất-phần-tử-selecting-elements" class="relative group">1. Truy xuất phần tử (Selecting Elements) </h2><p>Trước khi thay đổi bất cứ thứ gì, JavaScript cần phải &ldquo;chọn&rdquo; được phần tử HTML mà nó muốn tác động. Đây là những &ldquo;tọa độ&rdquo; trên bản đồ DOM.</p>
+<p>Có hai cách phổ biến nhất để làm điều này:</p>
+<p>document.getElementById(&lsquo;id-cua-ban&rsquo;)</p>
+<h3 id="documentgetelementbyidid-cua-ban" class="relative group">document.getElementById(&lsquo;id-cua-ban&rsquo;) </h3><p>Đây là cách nhanh và đơn giản nhất. Bạn chỉ cần đặt một thuộc tính id (duy nhất) cho thẻ HTML của mình.</p>
+<p>HTML:</p>
+<p><strong>HTML:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tieu-de&#34;</span><span class="p">&gt;</span>Tiêu đề ban đầu<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>JavaScript:</p>
+<p><strong>JavaScript:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// 1. Truy xuất (chọn) phần tử có id là &#34;tieu-de&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">h1Element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;tieu-de&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 2. In ra console để xem thử
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">h1Element</span><span class="p">);</span> <span class="c1">// Sẽ in ra thẻ &lt;h1 id=&#34;tieu-de&#34;&gt;...&lt;/h1&gt;
+</span></span></span></code></pre></div><p>document.querySelector(&lsquo;selector&rsquo;)</p>
+<h3 id="documentqueryselectorselector" class="relative group">document.querySelector(&lsquo;selector&rsquo;) </h3><p>Cách này linh hoạt hơn rất nhiều. Bạn có thể chọn phần tử bằng bất cứ CSS selector nào (chọn theo id, class, tên thẻ, v.v.).</p>
+<p>Chọn theo id: document.querySelector(&rsquo;#tieu-de')</p>
+<ul>
+<li>Chọn theo id: <code>document.querySelector('#tieu-de')</code></li>
+<li>Chọn theo class: <code>document.querySelector('.ten-class')</code></li>
+<li>Chọn theo tên thẻ: <code>document.querySelector('p')</code> (Cách này sẽ chỉ trả về phần tử đầu tiên mà nó tìm thấy)</li>
+</ul>
+<p>Chọn theo class: document.querySelector(&rsquo;.ten-class')</p>
+<p>Chọn theo tên thẻ: document.querySelector(&lsquo;p&rsquo;) (Cách này sẽ chỉ trả về phần tử đầu tiên mà nó tìm thấy)</p>
+<p>HTML:</p>
+<p><strong>HTML:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;doan-van&#34;</span><span class="p">&gt;</span>Đoạn văn đầu tiên.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;doan-van&#34;</span><span class="p">&gt;</span>Đoạn văn thứ hai.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>JavaScript:</p>
+<p><strong>JavaScript:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Chỉ chọn được phần tử CÓ CLASS &#34;doan-van&#34; ĐẦU TIÊN
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">pElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;.doan-van&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">pElement</span><span class="p">);</span>
+</span></span></code></pre></div><p>Lưu ý: Nếu bạn muốn chọn tất cả các phần tử có class &ldquo;doan-van&rdquo;, bạn dùng document.querySelectorAll(&rsquo;.doan-van&rsquo;).
+<strong>Lưu ý:</strong> Nếu bạn muốn chọn tất cả các phần tử có class &ldquo;doan-van&rdquo;, bạn dùng <code>document.querySelectorAll('.doan-van')</code>.</p>
+<ol start="2">
+<li>Thay đổi nội dung (Changing Content)</li>
+</ol>
+<h2 id="2-thay-đổi-nội-dung-changing-content" class="relative group">2. Thay đổi nội dung (Changing Content) </h2><p>Khi đã &ldquo;nắm&rdquo; được phần tử trong tay (lưu nó vào một biến), bạn có thể thay đổi nội dung bên trong nó.</p>
+<p>.textContent</p>
+<h3 id="textcontent" class="relative group">.textContent </h3><p>Cách này an toàn và được khuyên dùng nhất. Nó sẽ thay đổi chỉ nội dung văn bản bên trong thẻ, bỏ qua mọi thẻ HTML.</p>
+<p>HTML:</p>
+<p><strong>HTML:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;tieu-de&#34;</span><span class="p">&gt;</span>Đây là tiêu đề cũ<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>JavaScript:</p>
+<p><strong>JavaScript:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// 1. Chọn phần tử
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">h1Element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;tieu-de&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 2. Thay đổi nội dung text của nó
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">h1Element</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&#34;Đây là tiêu đề MỚI!&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><p>Kết quả trên trình duyệt: Chữ Đây là tiêu đề cũ sẽ ngay lập tức bị đổi thành Đây là tiêu đề MỚI!.</p>
+<p>.innerHTML</p>
+<h3 id="innerhtml" class="relative group">.innerHTML </h3><p>Cách này cho phép bạn chèn cả thẻ HTML vào bên trong phần tử.</p>
+<p>Cảnh báo: Hãy cẩn thận khi dùng .innerHTML với dữ liệu do người dùng nhập vào, vì nó có thể tiềm ẩn rủi ro bảo mật (XSS). Nhưng nếu bạn tự kiểm soát nội dung, nó rất hữu ích.</p>
+<p>HTML:</p>
+<p><strong>HTML:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>JavaScript:</p>
+<p><strong>JavaScript:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;container&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">container</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&#34;&lt;h2&gt;Đây là thẻ H2&lt;/h2&gt;&lt;p&gt;Và đây là đoạn văn.&lt;/p&gt;&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><p>Kết quả: Trình duyệt sẽ hiển thị một thẻ h2 và một thẻ p bên trong div container.</p>
+<ol start="3">
+<li>Thay đổi thuộc tính và Style (Attributes &amp; CSS)</li>
+</ol>
+<h2 id="3-thay-đổi-thuộc-tính-và-style-attributes--css" class="relative group">3. Thay đổi thuộc tính và Style (Attributes &amp; CSS) </h2><p>Bạn cũng có thể thay đổi các thuộc tính (như src của ảnh) hoặc style (CSS) của phần tử.</p>
+<p>HTML:</p>
+<p><strong>HTML:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;my-image&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;link-anh-cu.jpg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;ảnh cũ&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;my-text&#34;</span><span class="p">&gt;</span>Đoạn văn này sẽ đổi màu.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>JavaScript:</p>
+<p><strong>JavaScript:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Thay đổi thuộc tính &#39;src&#39; của ảnh
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">img</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;my-image&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">img</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s2">&#34;link-anh-moi.png&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">img</span><span class="p">.</span><span class="nx">alt</span> <span class="o">=</span> <span class="s2">&#34;ảnh mới&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Thay đổi style (CSS)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">pText</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;my-text&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">pText</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="s2">&#34;red&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">pText</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">fontSize</span> <span class="o">=</span> <span class="s2">&#34;24px&#34;</span><span class="p">;</span> <span class="c1">// Lưu ý: thuộc tính CSS có dấu gạch (font-size) sẽ viết liền (fontSize)
+</span></span></span></code></pre></div><p>Kết luận</p>
+<h2 id="tổng-kết" class="relative group">Tổng kết </h2><p>Bạn vừa học được cách sửtr dụng sức mạnh lớn nhất của JavaScript: thay đổi trang web một cách linh hoạt! Đây là nền tảng cho mọi thứ, từ việc hiển thị thông báo, tạo hiệu ứng, cho đến xây dựng các ứng dụng web phức tạp.
+Bạn vừa học được cách sử dụng sức mạnh lớn nhất của JavaScript: thay đổi trang web một cách linh hoạt! Đây là nền tảng cho mọi thứ, từ việc hiển thị thông báo, tạo hiệu ứng, cho đến xây dựng các ứng dụng web phức tạp.</p>
+<p>Nhưng làm thế nào để chúng ta thực hiện các thay đổi này khi người dùng làm gì đó (ví dụ: khi họ click chuột)? Đó là nội dung của bài học tiếp theo: Bắt sự kiện (Events).
+Nhưng làm thế nào để chúng ta thực hiện các thay đổi này khi người dùng làm gì đó (ví dụ: khi họ click chuột)? Đó là nội dung của bài học tiếp theo: <strong>Bắt sự kiện (Events)</strong>.</p>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+
+      
+
+      
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Cuộn lên trên cùng"
+            title="Cuộn lên trên cùng"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            HuyVinh&rsquo;s Blog © 2025
+        </p>
+      
+      
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+        <div
+          class="me-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        >
+          <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+            <div
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
+              title="Chuyển sang giao diện tối"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+            </div>
+            <div
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
+              title="Chuyển sang giao diện sáng"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+            </div>
+          </button>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="http://localhost:1313/"
+>
+  <div
+    id="search-modal"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Tìm kiếm"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Đóng (Esc)"
+      >
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto overflow-auto px-2">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

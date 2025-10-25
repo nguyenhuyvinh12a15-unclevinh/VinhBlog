@@ -1,0 +1,793 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="vi"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f9fafb" />
+  
+  <title> &middot; Congo</title>
+    <meta name="title" content=" &middot; Congo" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/css/main.bundle.min.3b61a055e4493f5f37d7ca11cd1b0ed3fe817d908eeacda652d61ded7694d026.css"
+    integrity="sha256-O2GgVeRJP18318oRzRsO0/6BfZCO6s2mUtYd7XaU0CY="
+  />
+  
+    
+    
+    
+  
+  
+  
+    
+    
+  
+  
+    
+    
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="http://localhost:1313/js/main.bundle.min.c1722f6420267c6804668eae9dcb2657491f19c59c7c8943ba5300df8f72101d.js"
+      integrity="sha256-wXIvZCAmfGgEZo6uncsmV0kfGcWcfIlDulMA349yEB0="
+      data-copy="Sao chép"
+      data-copied="Đã sao chép"
+    ></script>
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        
+      
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/posts/javascript/6_mang-arrays-js/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/javascript/6_mang-arrays-js/">
+  <meta property="og:site_name" content="Congo">
+  <meta property="og:title" content="Congo">
+  <meta property="og:description" content="My awesome website">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Congo">
+  <meta name="twitter:description" content="My awesome website">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "",
+    "headline": "",
+    
+    
+    "inLanguage": "vi",
+    "url" : "http:\/\/localhost:1313\/posts\/javascript\/6_mang-arrays-js\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Huy Vĩnh"
+    },
+    
+    
+    
+    
+    
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1034"
+  }
+  </script>
+    
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Chào Mừng Đến Với Blog Của Huy Vĩnh! Tada",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/posts/javascript/",
+       "name": "Java Script Là Gì? Ngôn Ngữ Giúp Trang Web Của Bạn \"Sống Dậy\"",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Huy Vĩnh" />
+  
+  
+    
+      <link href="mailto:nguyenhuyvinh12a5@gmail.com" rel="me" />
+    
+      <link href="https://facebook.com/zinhzinhtrasV" rel="me" />
+    
+      <link href="https://github.com/nguyenhuyvinh12a15-unclevinh" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Chuyển đến nội dung chính</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="z-40 flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Congo</a
+  >
+
+    </div>
+    
+      
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span></span
+              >
+            </li>
+            
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/about/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Giới thiệu</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/posts/"
+                      title="Posts"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Blog</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href=""
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Chủ đề</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/tags/"
+                      title="Tags"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Tags</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+                      <button
+                        id="search-button-1"
+                        title="Tìm kiếm (/)"
+                      >
+                        
+                          <span
+                            class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                          ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </button>
+                    
+                  
+                </li>
+              
+                
+                  
+              
+            
+          </ul>
+        </div>
+      </label>
+      
+      <ul class="hidden list-none flex-row text-end sm:flex">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/about/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Giới thiệu</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/posts/"
+                  title="Posts"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Blog</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href=""
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Chủ đề</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/tags/"
+                  title="Tags"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Tags</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                
+                
+                  <button
+                    id="search-button-2"
+                    title="Tìm kiếm (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+            
+              
+          
+
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span title="Thời gian đọc">5 phút</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Mục lục
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#bài-6-sức-mạnh-của-mảng-arrays---lưu-trữ-và-xử-lý-danh-sách-">Bài 6: Sức mạnh của Mảng (Arrays) - Lưu trữ và xử lý danh sách 📋</a></li>
+    <li><a href="#bài-6-sức-mạnh-của-mảng-arrays---lưu-trữ-và-xử-lý-danh-sách--1">Bài 6: Sức mạnh của Mảng (Arrays) - Lưu trữ và xử lý danh sách 📋</a></li>
+    <li><a href="#mảng-là-gì">Mảng là gì?</a></li>
+    <li><a href="#truy-cập-phần-tử-chỉ-số-index">Truy cập phần tử: Chỉ số (Index)</a></li>
+    <li><a href="#các-thuộc-tính-và-phương-thức-cơ-bản">Các thuộc tính và phương thức cơ bản</a>
+      <ul>
+        <li><a href="#length-thuộc-tính">.length (Thuộc tính)</a></li>
+        <li><a href="#push-và-pop-thay-đổi-mảng">push() và pop() (Thay đổi mảng)</a></li>
+      </ul>
+    </li>
+    <li><a href="#duyệt-mảng-looping---cách-xử-lý-danh-sách">Duyệt mảng (Looping) - Cách xử lý danh sách</a>
+      <ul>
+        <li><a href="#1-dùng-vòng-lặp-for-cách-cổ-điển">1. Dùng vòng lặp for (Cách cổ điển)</a></li>
+        <li><a href="#2-dùng-foreach-cách-hiện-đại">2. Dùng .forEach() (Cách hiện đại)</a></li>
+      </ul>
+    </li>
+    <li><a href="#ví-dụ-thực-tế-hiển-thị-danh-sách-lên-trang-web">Ví dụ thực tế: Hiển thị danh sách lên trang web</a></li>
+    <li><a href="#tổng-kết">Tổng kết</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <h2 id="bài-6-sức-mạnh-của-mảng-arrays---lưu-trữ-và-xử-lý-danh-sách-" class="relative group">Bài 6: Sức mạnh của Mảng (Arrays) - Lưu trữ và xử lý danh sách 📋 </h2><p>title: &ldquo;Bài 6: Sức mạnh của Mảng (Arrays) - Lưu trữ và xử lý danh sách&rdquo;
+date: 2024-05-28
+description: &ldquo;Tìm hiểu về Mảng (Arrays) trong JavaScript, cách truy cập phần tử, các phương thức cơ bản như push, pop, và các cách duyệt mảng như for và forEach.&rdquo;
+series: [&ldquo;Làm chủ JavaScript&rdquo;]
+tags: [&ldquo;JavaScript&rdquo;, &ldquo;Mảng&rdquo;, &ldquo;Array&rdquo;, &ldquo;Cơ bản&rdquo;, &ldquo;DOM&rdquo;]
+categories: [&ldquo;Lập trình&rdquo;]
+slug: &ldquo;javascript-mang-arrays&rdquo;</p>
+<hr>
+<h2 id="bài-6-sức-mạnh-của-mảng-arrays---lưu-trữ-và-xử-lý-danh-sách--1" class="relative group">Bài 6: Sức mạnh của Mảng (Arrays) - Lưu trữ và xử lý danh sách 📋 </h2><p>Chào các bạn! Trong series này, chúng ta đã đi qua các khái niệm trụ cột của JavaScript. Ở Bài 2, chúng ta đã &ldquo;giới thiệu sơ lược&rdquo; về Mảng (Array). Nhưng trên thực tế, Mảng là một chủ đề lớn và vô cùng quan trọng.</p>
+<p>Hầu hết mọi ứng dụng web đều phải xử lý danh sách dữ liệu: danh sách bạn bè, danh sách sản phẩm, danh sách bình luận&hellip; Và Mảng chính là công cụ để làm việc đó.</p>
+<p>Mảng là gì?</p>
+<h2 id="mảng-là-gì" class="relative group">Mảng là gì? </h2><p>Mảng (Array) là một kiểu dữ liệu đặc biệt, cho phép bạn lưu trữ nhiều giá trị trong một biến duy nhất. Thay vì tạo 10 biến cho 10 sinh viên, bạn chỉ cần tạo 1 Mảng danhSachSinhVien.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// Cách tạo một mảng
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">traiCay</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Táo&#34;</span><span class="p">,</span> <span class="s2">&#34;Cam&#34;</span><span class="p">,</span> <span class="s2">&#34;Chuối&#34;</span><span class="p">,</span> <span class="s2">&#34;Xoài&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">diemSo</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mf">9.5</span><span class="p">,</span> <span class="mi">7</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">honHop</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Xin chào&#34;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">null</span><span class="p">];</span> <span class="c1">// Mảng có thể chứa nhiều kiểu dữ liệu
+</span></span></span></code></pre></div><p>Truy cập phần tử: Chỉ số (Index)</p>
+<h2 id="truy-cập-phần-tử-chỉ-số-index" class="relative group">Truy cập phần tử: Chỉ số (Index) </h2><p>Các phần tử trong mảng được sắp xếp theo thứ tự và được đánh chỉ số (index), bắt đầu từ số 0.</p>
+<p>Để lấy một phần tử, bạn dùng cú pháp tenMang[chiSo].
+Để lấy một phần tử, bạn dùng cú pháp <code>tenMang[chiSo]</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">traiCay</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Táo&#34;</span><span class="p">,</span> <span class="s2">&#34;Cam&#34;</span><span class="p">,</span> <span class="s2">&#34;Chuối&#34;</span><span class="p">,</span> <span class="s2">&#34;Xoài&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">traiCay</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span> <span class="c1">// In ra &#34;Táo&#34; (phần tử đầu tiên)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">traiCay</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span> <span class="c1">// In ra &#34;Chuối&#34; (phần tử thứ ba)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">traiCay</span><span class="p">[</span><span class="mi">4</span><span class="p">]);</span> <span class="c1">// In ra undefined (vì không có phần tử ở chỉ số 4)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Gán lại giá trị
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">traiCay</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;Nho&#34;</span><span class="p">;</span> <span class="c1">// Thay thế &#34;Cam&#34; bằng &#34;Nho&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">traiCay</span><span class="p">);</span> <span class="c1">// In ra [&#34;Táo&#34;, &#34;Nho&#34;, &#34;Chuối&#34;, &#34;Xoài&#34;]
+</span></span></span></code></pre></div><p>Các thuộc tính và phương thức cơ bản</p>
+<h2 id="các-thuộc-tính-và-phương-thức-cơ-bản" class="relative group">Các thuộc tính và phương thức cơ bản </h2><p>Mảng không chỉ để lưu trữ, nó còn đi kèm rất nhiều &ldquo;phương thức&rdquo; (hàm có sẵn) tiện lợi.</p>
+<p>.length (Thuộc tính)</p>
+<h3 id="length-thuộc-tính" class="relative group">.length (Thuộc tính) </h3><p>Cho bạn biết mảng có bao nhiêu phần tử.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">traiCay</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Táo&#34;</span><span class="p">,</span> <span class="s2">&#34;Nho&#34;</span><span class="p">,</span> <span class="s2">&#34;Chuối&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">traiCay</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span> <span class="c1">// In ra 3
+</span></span></span></code></pre></div><p>push() và pop() (Thay đổi mảng)</p>
+<h3 id="push-và-pop-thay-đổi-mảng" class="relative group">push() và pop() (Thay đổi mảng) </h3><p>push(giaTri): Thêm một phần tử vào cuối mảng.</p>
+<ul>
+<li><code>push(giaTri)</code>: Thêm một phần tử vào <strong>cuối</strong> mảng.</li>
+<li><code>pop()</code>: Xóa một phần tử ở <strong>cuối</strong> mảng (và trả về phần tử bị xóa đó).</li>
+</ul>
+<p>pop(): Xóa một phần tử ở cuối mảng (và trả về phần tử bị xóa đó).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">dongVat</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Chó&#34;</span><span class="p">,</span> <span class="s2">&#34;Mèo&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">dongVat</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">&#34;Chuột&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">dongVat</span><span class="p">);</span> <span class="c1">// In ra [&#34;Chó&#34;, &#34;Mèo&#34;, &#34;Chuột&#34;]
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="nx">dongVat</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">dongVat</span><span class="p">);</span> <span class="c1">// In ra [&#34;Chó&#34;, &#34;Mèo&#34;]
+</span></span></span></code></pre></div><p>Duyệt mảng (Looping) - Cách xử lý danh sách</p>
+<h2 id="duyệt-mảng-looping---cách-xử-lý-danh-sách" class="relative group">Duyệt mảng (Looping) - Cách xử lý danh sách </h2><p>Đây là phần quan trọng nhất. Làm thế nào để thực hiện một hành động (ví dụ: in ra) với tất cả các phần tử trong mảng?</p>
+<ol>
+<li>Dùng vòng lặp for (Cách cổ điển)</li>
+</ol>
+<h3 id="1-dùng-vòng-lặp-for-cách-cổ-điển" class="relative group">1. Dùng vòng lặp for (Cách cổ điển) </h3><p>Chúng ta có thể dùng vòng lặp for kết hợp với thuộc tính .length.
+Chúng ta có thể dùng vòng lặp <code>for</code> kết hợp với thuộc tính <code>.length</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">traiCay</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Táo&#34;</span><span class="p">,</span> <span class="s2">&#34;Cam&#34;</span><span class="p">,</span> <span class="s2">&#34;Chuối&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">traiCay</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// i sẽ chạy từ 0, 1, 2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">traiCay</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// i sẽ chạy từ 0, 1, 2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">traiCay</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Kết quả:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">Táo
+</span></span><span class="line"><span class="cl">Cam
+</span></span><span class="line"><span class="cl">Chuối
+</span></span></code></pre></div><ol start="2">
+<li>Dùng .forEach() (Cách hiện đại)</li>
+</ol>
+<h3 id="2-dùng-foreach-cách-hiện-đại" class="relative group">2. Dùng .forEach() (Cách hiện đại) </h3><p>Đây là cách viết thanh lịch và dễ đọc hơn rất nhiều. Phương thức .forEach() nhận vào một hàm (function), và nó sẽ gọi hàm đó 1 lần cho mỗi phần tử trong mảng.
+Đây là cách viết thanh lịch và dễ đọc hơn rất nhiều. Phương thức <code>.forEach()</code> nhận vào một hàm (function), và nó sẽ gọi hàm đó 1 lần cho mỗi phần tử trong mảng.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">traiCay</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Táo&#34;</span><span class="p">,</span> <span class="s2">&#34;Cam&#34;</span><span class="p">,</span> <span class="s2">&#34;Chuối&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// &#34;Với mỗi &#39;item&#39; trong mảng &#39;traiCay&#39;, hãy thực hiện hàm này&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">traiCay</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>Kết quả: (Y hệt như trên)
+Kết quả: (Y hệt như trên).</p>
+<p>Ví dụ thực tế: Hiển thị danh sách lên trang web</p>
+<h2 id="ví-dụ-thực-tế-hiển-thị-danh-sách-lên-trang-web" class="relative group">Ví dụ thực tế: Hiển thị danh sách lên trang web </h2><p>Hãy kết hợp kiến thức về DOM (Bài 4) và Mảng để hiển thị một danh sách lên trang HTML.</p>
+<p>HTML (index.html):</p>
+<p><strong>HTML (<code>index.html</code>):</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Danh sách trái cây<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Các loại trái cây yêu thích của tôi<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;fruit-list&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="c">&lt;!-- JavaScript sẽ chèn nội dung vào đây --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;app.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>JavaScript (app.js):</p>
+<p><strong>JavaScript (<code>app.js</code>):</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// 1. Dữ liệu của chúng ta
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">traiCay</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Táo 🍎&#34;</span><span class="p">,</span> <span class="s2">&#34;Cam 🍊&#34;</span><span class="p">,</span> <span class="s2">&#34;Chuối 🍌&#34;</span><span class="p">,</span> <span class="s2">&#34;Dâu 🍓&#34;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 2. Truy xuất phần tử DOM
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">listElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;fruit-list&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 3. Dùng vòng lặp để tạo và chèn HTML
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">traiCay</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">item</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 3.1. Tạo một thẻ &lt;li&gt; mới
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">li</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;li&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 3.1. Tạo một thẻ &lt;li&gt; mới
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kr">const</span> <span class="nx">li</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;li&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// 3.2. Gán nội dung cho thẻ &lt;li&gt;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">li</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">item</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1">// 3.3. Chèn thẻ &lt;li&gt; vào bên trong &lt;ul&gt;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nx">listElement</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">li</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>Kết quả: Trang web của bạn sẽ hiển thị một danh sách (dạng gạch đầu dòng) 4 loại trái cây.
+<strong>Kết quả:</strong> Trang web của bạn sẽ hiển thị một danh sách (dạng gạch đầu dòng) 4 loại trái cây.</p>
+<p>Kết luận</p>
+<h2 id="tổng-kết" class="relative group">Tổng kết </h2><p>Mảng là một công cụ không thể thiếu. Nắm vững cách duyệt mảng và các phương thức của nó là chìa khóa để xử lý dữ liệu động trong bất kỳ ứng dụng web nào. Với 6 bài học này, bạn đã có một nền tảng JavaScript cực kỳ vững chắc để bắt đầu xây dựng những dự án thực tế.</p>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+
+      
+
+      
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Cuộn lên trên cùng"
+            title="Cuộn lên trên cùng"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            HuyVinh&rsquo;s Blog © 2025
+        </p>
+      
+      
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+        <div
+          class="me-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        >
+          <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+            <div
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
+              title="Chuyển sang giao diện tối"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+            </div>
+            <div
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
+              title="Chuyển sang giao diện sáng"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+            </div>
+          </button>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="http://localhost:1313/"
+>
+  <div
+    id="search-modal"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Tìm kiếm"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Đóng (Esc)"
+      >
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto overflow-auto px-2">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

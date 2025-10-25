@@ -1,0 +1,746 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="vi"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f9fafb" />
+  
+  <title>Bài 4: Lớp (Class) và Đối tượng (Object) - Cốt lõi của OOP &middot; Congo</title>
+    <meta name="title" content="Bài 4: Lớp (Class) và Đối tượng (Object) - Cốt lõi của OOP &middot; Congo" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/css/main.bundle.min.3b61a055e4493f5f37d7ca11cd1b0ed3fe817d908eeacda652d61ded7694d026.css"
+    integrity="sha256-O2GgVeRJP18318oRzRsO0/6BfZCO6s2mUtYd7XaU0CY="
+  />
+  
+    
+    
+    
+  
+  
+  
+    
+    
+  
+  
+    
+    
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="http://localhost:1313/js/main.bundle.min.c1722f6420267c6804668eae9dcb2657491f19c59c7c8943ba5300df8f72101d.js"
+      integrity="sha256-wXIvZCAmfGgEZo6uncsmV0kfGcWcfIlDulMA349yEB0="
+      data-copy="Sao chép"
+      data-copied="Đã sao chép"
+    ></script>
+  
+  
+  <meta
+    name="description"
+    content="
+      Tìm hiểu về Lớp (Class) và Đối tượng (Object), hai khái niệm nền tảng của Lập trình Hướng đối tượng (OOP) trong Java, giúp bạn tổ chức code hiệu quả.
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/posts/java-class-object/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/java-class-object/">
+  <meta property="og:site_name" content="Congo">
+  <meta property="og:title" content="Bài 4: Lớp (Class) và Đối tượng (Object) - Cốt lõi của OOP">
+  <meta property="og:description" content="Tìm hiểu về Lớp (Class) và Đối tượng (Object), hai khái niệm nền tảng của Lập trình Hướng đối tượng (OOP) trong Java, giúp bạn tổ chức code hiệu quả.">
+  <meta property="og:locale" content="vi">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-05-26T00:00:00+00:00">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="OOP">
+    <meta property="article:tag" content="Class">
+    <meta property="article:tag" content="Object">
+    <meta property="article:tag" content="Lập Trình Cơ Bản">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bài 4: Lớp (Class) và Đối tượng (Object) - Cốt lõi của OOP">
+  <meta name="twitter:description" content="Tìm hiểu về Lớp (Class) và Đối tượng (Object), hai khái niệm nền tảng của Lập trình Hướng đối tượng (OOP) trong Java, giúp bạn tổ chức code hiệu quả.">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Bài 4: Lớp (Class) và Đối tượng (Object) - Cốt lõi của OOP",
+    "headline": "Bài 4: Lớp (Class) và Đối tượng (Object) - Cốt lõi của OOP",
+    "description": "Tìm hiểu về Lớp (Class) và Đối tượng (Object), hai khái niệm nền tảng của Lập trình Hướng đối tượng (OOP) trong Java, giúp bạn tổ chức code hiệu quả.",
+    
+    "inLanguage": "vi",
+    "url" : "http:\/\/localhost:1313\/posts\/java-class-object\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Huy Vĩnh"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-05-26T00:00:00\u002b00:00",
+    "datePublished": "2024-05-26T00:00:00\u002b00:00",
+    
+    "dateModified": "2024-05-26T00:00:00\u002b00:00",
+    
+    "keywords": ["Java","OOP","Class","Object","Lập trình cơ bản"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1089"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Chào Mừng Đến Với Blog Của Huy Vĩnh! Tada",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/",
+       "name": "Lập Trình",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Bài 4 Lớp ( Class) Và Đối Tượng ( Object) Cốt Lõi Của Oop",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Huy Vĩnh" />
+  
+  
+    
+      <link href="mailto:nguyenhuyvinh12a5@gmail.com" rel="me" />
+    
+      <link href="https://facebook.com/zinhzinhtrasV" rel="me" />
+    
+      <link href="https://github.com/nguyenhuyvinh12a15-unclevinh" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Chuyển đến nội dung chính</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="z-40 flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Congo</a
+  >
+
+    </div>
+    
+      
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span></span
+              >
+            </li>
+            
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/about/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Giới thiệu</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/posts/"
+                      title="Posts"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Blog</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href=""
+                      title=""
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Chủ đề</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/tags/"
+                      title="Tags"
+                      onclick="close_menu()"
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >Tags</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+                      <button
+                        id="search-button-1"
+                        title="Tìm kiếm (/)"
+                      >
+                        
+                          <span
+                            class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                          ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </button>
+                    
+                  
+                </li>
+              
+                
+                  
+              
+            
+          </ul>
+        </div>
+      </label>
+      
+      <ul class="hidden list-none flex-row text-end sm:flex">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/about/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Giới thiệu</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/posts/"
+                  title="Posts"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Blog</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href=""
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Chủ đề</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/tags/"
+                  title="Tags"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Tags</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                
+                
+                  <button
+                    id="search-button-2"
+                    title="Tìm kiếm (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+            
+              
+          
+
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Bài 4: Lớp (Class) và Đối tượng (Object) - Cốt lõi của OOP
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <span title="Thời gian đọc">6 phút</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    Mục lục
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#giới-thiệu-về-lập-trình-hướng-đối-tượng-oop">Giới thiệu về Lập trình Hướng đối tượng (OOP)</a></li>
+    <li><a href="#lớp-class-là-gì---bản-thiết-kế">Lớp (Class) là gì? - Bản thiết kế</a></li>
+    <li><a href="#đối-tượng-object-là-gì---sản-phẩm-thực-tế">Đối tượng (Object) là gì? - Sản phẩm thực tế</a></li>
+    <li><a href="#thuộc-tính-attributes-và-phương-thức-methods">Thuộc tính (Attributes) và Phương thức (Methods)</a></li>
+    <li><a href="#ví-dụ-thực-tế-lớp-dog">Ví dụ thực tế: Lớp Dog</a>
+      <ul>
+        <li><a href="#1-tạo-bản-thiết-kế---file-dogjava">1. Tạo &ldquo;bản thiết kế&rdquo; - File Dog.java</a></li>
+        <li><a href="#2-tạo-và-sử-dụng-sản-phẩm---file-mainjava">2. Tạo và sử dụng &ldquo;sản phẩm&rdquo; - File Main.java</a></li>
+      </ul>
+    </li>
+    <li><a href="#tổng-kết">Tổng kết</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <p>Xin chào các bạn đã quay trở lại với series &ldquo;Chinh phục Java từ con số 0&rdquo;! Trong các bài học trước, chúng ta đã học cách ra lệnh cho máy tính lưu trữ dữ liệu, đưa ra quyết định và lặp lại công việc. Về cơ bản, chúng ta đã viết code theo lối &ldquo;tuần tự&rdquo; - một danh sách các hướng dẫn từ trên xuống dưới.</p>
+<p>Hôm nay, chúng ta sẽ thực hiện một bước nhảy vọt về tư duy lập trình. Chúng ta sẽ tìm hiểu về Lập trình Hướng đối tượng (Object-Oriented Programming - OOP), triết lý đã làm nên sức mạnh và sự thành công của Java.</p>
+<h2 id="giới-thiệu-về-lập-trình-hướng-đối-tượng-oop" class="relative group">Giới thiệu về Lập trình Hướng đối tượng (OOP) </h2><p>Nghe có vẻ &ldquo;hàn lâm&rdquo;, nhưng ý tưởng của OOP lại vô cùng tự nhiên. Thay vì viết một chương trình như một chuỗi dài các mệnh lệnh, OOP giúp chúng ta mô phỏng thế giới thực.</p>
+<p>Hãy nhìn xung quanh bạn: có một chiếc điện thoại, một cái bàn, một cuốn sách. Mỗi thứ đều là một &ldquo;vật thể&rdquo; (object), và mỗi vật thể có những đặc điểm riêng (màu sắc, trọng lượng) và những hành vi riêng (điện thoại có thể gọi, cuốn sách có thể lật trang).</p>
+<p>OOP cho phép chúng ta mang tư duy này vào trong code. Chúng ta tạo ra các &ldquo;đối tượng&rdquo; ảo, gói ghém dữ liệu (đặc điểm) và hành vi của chúng lại với nhau. Cách làm này giúp code trở nên có tổ chức, dễ quản lý, dễ tái sử dụng và cực kỳ hiệu quả cho các dự án lớn.</p>
+<p>Để làm được điều này, chúng ta cần hiểu hai khái niệm nền tảng: Lớp (Class) và Đối tượng (Object).</p>
+<h2 id="lớp-class-là-gì---bản-thiết-kế" class="relative group">Lớp (Class) là gì? - Bản thiết kế </h2><p>Hãy tưởng tượng bạn muốn chế tạo một chiếc xe hơi. Trước tiên, bạn cần một bản thiết kế chi tiết. Bản thiết kế này sẽ định nghĩa mọi thứ về một chiếc xe hơi nói chung:</p>
+<ul>
+<li>Nó phải có những bộ phận gì? (Bánh xe, động cơ, vô lăng&hellip;).</li>
+<li>Nó có thể làm được những gì? (Chạy, dừng, rẽ trái, rẽ phải&hellip;).</li>
+</ul>
+<p>Trong Java, Lớp (Class) chính là bản thiết kế đó. Nó không phải là một chiếc xe hơi thật, mà là một khuôn mẫu định nghĩa nên cấu trúc và hành vi của một loại đối tượng nào đó.</p>
+<blockquote>
+<p><strong>Class</strong> là một khuôn mẫu, một bản thiết kế, định nghĩa các thuộc tính và phương thức mà các đối tượng của nó sẽ có.</p></blockquote>
+<h2 id="đối-tượng-object-là-gì---sản-phẩm-thực-tế" class="relative group">Đối tượng (Object) là gì? - Sản phẩm thực tế </h2><p>Từ một bản thiết kế xe hơi, nhà máy có thể sản xuất ra hàng ngàn chiếc xe. Mỗi chiếc xe được tạo ra là một sản phẩm thực tế. Ví dụ, chiếc Vinfast Fadil màu đỏ của bạn là một chiếc xe, chiếc Toyota Vios màu trắng của người hàng xóm cũng là một chiếc xe.</p>
+<p>Trong Java, Đối tượng (Object) chính là sản phẩm thực tế đó. Nó là một thể hiện (instance) cụ thể được tạo ra từ một Lớp. Mỗi đối tượng sẽ có những đặc điểm riêng, dù chúng cùng được tạo ra từ một bản thiết kế.</p>
+<blockquote>
+<p><strong>Object</strong> là một thể hiện cụ thể của một Class. Nó có trạng thái và hành vi riêng, dựa trên những gì được định nghĩa trong Class.</p></blockquote>
+<h2 id="thuộc-tính-attributes-và-phương-thức-methods" class="relative group">Thuộc tính (Attributes) và Phương thức (Methods) </h2><p>Mỗi bản thiết kế (Class) sẽ định nghĩa hai thứ quan trọng:</p>
+<ul>
+<li><strong>Thuộc tính (Attributes)</strong>: Là những đặc điểm, những dữ liệu mô tả về đối tượng. Chúng chính là các biến nằm bên trong một lớp.
+<ul>
+<li>Ví dụ: Class <code>Car</code> có thể có các thuộc tính <code>String color;</code>, <code>int yearOfManufacture;</code>.</li>
+</ul>
+</li>
+<li><strong>Phương thức (Methods)</strong>: Là những hành vi, những hành động mà đối tượng có thể thực hiện. Chúng chính là các hàm nằm bên trong một lớp.
+<ul>
+<li>Ví dụ: Class <code>Car</code> có thể có các phương thức <code>void startEngine()</code>, <code>void accelerate()</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="ví-dụ-thực-tế-lớp-dog" class="relative group">Ví dụ thực tế: Lớp Dog </h2><p>Bây giờ, hãy tạo một lớp để mô phỏng một chú chó.</p>
+<h3 id="1-tạo-bản-thiết-kế---file-dogjava" class="relative group">1. Tạo &ldquo;bản thiết kế&rdquo; - File Dog.java </h3><p>Đầu tiên, hãy tạo một file mới tên là Dog.java và định nghĩa lớp Dog:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// Đây là bản thiết kế cho tất cả các đối tượng Dog</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Dog</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 1. Thuộc tính (Attribute)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Mỗi chú chó sẽ có một cái tên</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 2. Phương thức (Method)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Mỗi chú chó đều có thể sủa</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">bark</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Phương thức này sử dụng thuộc tính &#39;name&#39; của chính đối tượng đó</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34; đang sủa: Gâu! Gâu!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h3 id="2-tạo-và-sử-dụng-sản-phẩm---file-mainjava" class="relative group">2. Tạo và sử dụng &ldquo;sản phẩm&rdquo; - File Main.java </h3><p>Bây giờ, trong file <code>Main.java</code> quen thuộc, chúng ta sẽ tạo ra những chú chó thực tế từ bản thiết kế <code>Dog</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Tạo một đối tượng (sản phẩm) đầu tiên từ lớp Dog</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Dog</span><span class="w"> </span><span class="n">dog1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Dog</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Gán giá trị cho thuộc tính của đối tượng dog1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">dog1</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;Milu&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Gọi phương thức (hành vi) của đối tượng dog1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">dog1</span><span class="p">.</span><span class="na">bark</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">// Tạo một đối tượng thứ hai từ cùng một lớp Dog</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">Dog</span><span class="w"> </span><span class="n">dog2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Dog</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">dog2</span><span class="p">.</span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;Vàng&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">dog2</span><span class="p">.</span><span class="na">bark</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>Kết quả khi chạy:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">Milu đang sủa: Gâu! Gâu!
+</span></span><span class="line"><span class="cl">Vàng đang sủa: Gâu! Gâu!
+</span></span></code></pre></div><p>Hãy chú ý:</p>
+<ul>
+<li>Chúng ta dùng từ khóa <code>new</code> để tạo ra một đối tượng mới từ một lớp.</li>
+<li>Cả <code>dog1</code> và <code>dog2</code> đều được tạo ra từ lớp <code>Dog</code>, nhưng chúng là hai đối tượng hoàn toàn riêng biệt và có trạng thái (<code>name</code>) độc lập.</li>
+<li>Khi gọi phương thức <code>bark()</code>, mỗi đối tượng sẽ hành động dựa trên dữ liệu của chính nó.</li>
+</ul>
+<h2 id="tổng-kết" class="relative group">Tổng kết </h2><p>Bạn vừa hoàn thành bài học quan trọng nhất để hiểu về tư duy hướng đối tượng.</p>
+<ul>
+<li><strong>Lớp (Class)</strong>: Là một bản thiết kế hoặc khuôn mẫu, định nghĩa các thuộc tính (dữ liệu) và phương thức (hành vi) chung.</li>
+<li><strong>Đối tượng (Object)</strong>: Là một thể hiện cụ thể được tạo ra từ một lớp, có trạng thái và hành vi riêng.</li>
+<li><strong>Từ khóa <code>new</code></strong>: Được sử dụng để tạo ra một đối tượng mới từ một lớp.</li>
+</ul>
+<p>Nắm vững khái niệm Class và Object sẽ mở ra cho bạn một thế giới hoàn toàn mới trong lập trình. Trong các bài học sau, chúng ta sẽ khám phá sâu hơn về các sức mạnh khác của OOP. Hẹn gặp lại!</p>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+
+      
+
+      
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Cuộn lên trên cùng"
+            title="Cuộn lên trên cùng"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            HuyVinh&rsquo;s Blog © 2025
+        </p>
+      
+      
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+        <div
+          class="me-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        >
+          <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+            <div
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
+              title="Chuyển sang giao diện tối"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+            </div>
+            <div
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
+              title="Chuyển sang giao diện sáng"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+            </div>
+          </button>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="http://localhost:1313/"
+>
+  <div
+    id="search-modal"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Tìm kiếm"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Đóng (Esc)"
+      >
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto overflow-auto px-2">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

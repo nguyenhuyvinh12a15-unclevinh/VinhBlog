@@ -9,7 +9,7 @@ categories: ["Java"]
 slug: "java-cai-dat-moi-truong-hello-world"
 ---
 
-![Java logo](java.png)
+{{< figure src="/img/java.png" alt="Java logo" caption="Logo ngôn ngữ Java" >}}
 
 ## Bài 1: Cài đặt môi trường và "Hello, World!" đầu tiên với Java
 

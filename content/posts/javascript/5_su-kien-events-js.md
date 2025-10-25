@@ -9,7 +9,7 @@ categories: ["JavaScript"]
 slug: "javascript-events"
 ---
 
-![Javascript logo](javascript.png)
+{{< figure src="/img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
 
 ## Bài 5: Bắt sự kiện (Events) - Khiến trang web tương tác 💥
 

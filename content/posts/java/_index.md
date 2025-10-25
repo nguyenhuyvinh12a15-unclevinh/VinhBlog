@@ -8,7 +8,7 @@ categories: ["Java"]
 slug: "java-la-gi"
 ---
 
-![Java logo](java.png)
+{{< figure src="/img/java.png" alt="Java logo" caption="Logo ngôn ngữ Java" >}}
 
 # Java là gì? Tại sao "ông hoàng" này vẫn thống trị thế giới lập trình?
 

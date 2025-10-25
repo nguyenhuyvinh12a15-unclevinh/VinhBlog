@@ -9,7 +9,7 @@ categories: ["JavaScript"]
 slug: "javascript-dom-interaction"
 ---
 
-![Javascript logo](javascript.png)
+{{< figure src="/img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
 
 ## Bài 4: Giới thiệu về DOM - Khi JavaScript gặp HTML 🤝
 

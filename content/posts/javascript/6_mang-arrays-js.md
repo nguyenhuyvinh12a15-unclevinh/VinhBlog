@@ -9,7 +9,7 @@ categories: ["JavaScript"]
 slug: "javascript-mang-arrays"
 ---
 
-![Javascript logo](javascript.png)
+{{< figure src="/img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
 
 ## Bài 6: Sức mạnh của Mảng (Arrays) - Lưu trữ và xử lý danh sách 📋
 

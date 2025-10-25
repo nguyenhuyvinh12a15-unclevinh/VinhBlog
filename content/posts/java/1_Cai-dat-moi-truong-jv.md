@@ -9,8 +9,6 @@ categories: ["Java"]
 slug: "java-cai-dat-moi-truong-hello-world"
 ---
 
-{{< figure src="img/java.png" alt="Java logo" caption="Logo ngôn ngữ Java" >}}
-
 ## Bài 1: Cài đặt môi trường và "Hello, World!" đầu tiên với Java
 
 Chào mừng bạn đã quay trở lại với series "Chinh phục Java từ con số 0"! Trong bài viết trước, chúng ta đã tìm hiểu Java là gì và tại sao nó lại quyền năng đến vậy. Bây giờ là lúc để "xắn tay áo lên" và chuẩn bị mọi thứ cần thiết để viết những dòng code đầu tiên.

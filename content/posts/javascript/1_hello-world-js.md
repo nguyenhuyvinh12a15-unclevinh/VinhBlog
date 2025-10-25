@@ -9,8 +9,6 @@ categories: ["JavaScript"]
 slug: "javascript-hello-world"
 ---
 
-{{< figure src="img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
-
 ## Bài 1: Cách JavaScript "giao tiếp" với HTML và "Hello, World!" 🚀
 
 Chào mừng bạn đến với series "JavaScript - Làm chủ thế giới Web"! Ở bài mở đầu, chúng ta đã thống nhất rằng HTML là khung xương, CSS là da thịt, còn JavaScript chính là "bộ não" mang lại sự sống và khả năng tương tác.

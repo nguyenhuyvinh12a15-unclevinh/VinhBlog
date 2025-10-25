@@ -9,8 +9,6 @@ categories: ["JavaScript"]
 slug: "javascript-events"
 ---
 
-{{< figure src="img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
-
 ## Bài 5: Bắt sự kiện (Events) - Khiến trang web tương tác 💥
 
 Chào mừng bạn đến với bài học thứ 5! Ở bài trước, chúng ta đã học cách dùng DOM để "ra lệnh" cho HTML thay đổi (như đổi màu, đổi chữ). Nhưng chúng ta vẫn đang "ra lệnh" ngay khi trang web vừa tải xong.

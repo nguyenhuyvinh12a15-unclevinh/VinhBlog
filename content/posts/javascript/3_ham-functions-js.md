@@ -9,8 +9,6 @@ categories: ["JavaScript"]
 slug: "javascript-ham-functions"
 ---
 
-{{< figure src="img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
-
 ## Bài 3: Hàm (Functions) - Những cỗ máy tái sử dụng ⚙️
 
 Chào mừng các bạn đã quay trở lại! Ở bài trước, chúng ta đã học cách lưu trữ dữ liệu bằng Biến. Nhưng nếu chúng ta muốn thực hiện cùng một tác vụ (ví dụ: gửi lời chào) ở nhiều nơi khác nhau trong code thì sao? Chẳng lẽ chúng ta phải viết đi viết lại cùng một đoạn mã?

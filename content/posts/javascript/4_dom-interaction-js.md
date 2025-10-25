@@ -9,8 +9,6 @@ categories: ["JavaScript"]
 slug: "javascript-dom-interaction"
 ---
 
-{{< figure src="img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
-
 ## Bài 4: Giới thiệu về DOM - Khi JavaScript gặp HTML 🤝
 
 Chào mừng bạn đã quay trở lại! Chúng ta đã học về Biến (lưu trữ) và Hàm (hành động). Nhưng cho đến giờ, mã JavaScript của chúng ta vẫn chạy "ngầm" bên trong console. Làm thế nào để JavaScript có thể tương tác, thay đổi những gì người dùng nhìn thấy trên trang web (như thay đổi một dòng chữ, ẩn/hiện một hình ảnh)?

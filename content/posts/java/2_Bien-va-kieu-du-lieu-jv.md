@@ -9,8 +9,6 @@ categories: ["Java"]
 slug: "java-bien-va-kieu-du-lieu"
 ---
 
-{{< figure src="img/java.png" alt="Java logo" caption="Logo ngôn ngữ Java" >}}
-
 ## Bài 2: Biến và Kiểu dữ liệu - Những viên gạch cơ bản
 
 Chào mừng bạn đến với bài học thứ hai trong series "Chinh phục Java từ con số 0"! Ở bài trước, chúng ta đã thành công cài đặt môi trường và chạy chương trình "Hello, World!" đầu tiên. Đó là một khởi đầu tuyệt vời!

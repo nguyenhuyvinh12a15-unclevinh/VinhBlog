@@ -9,8 +9,6 @@ categories: ["JavaScript"]
 slug: "javascript-bien-kieu-du-lieu"
 ---
 
-{{< figure src="img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
-
 ## Bài 2: Biến (var, let, const) và "Trí nhớ" của JavaScript 💾
 
 Chào mừng bạn quay trở lại series "JavaScript - Làm chủ thế giới Web"! Ở bài 1, chúng ta đã biết cách "nói" Hello World với trình duyệt. Bây giờ, chúng ta sẽ học cách làm cho JavaScript có "trí nhớ" - đó chính là Biến (Variables).

@@ -9,8 +9,6 @@ categories: ["JavaScript"]
 slug: "javascript-mang-arrays"
 ---
 
-{{< figure src="img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
-
 ## Bài 6: Sức mạnh của Mảng (Arrays) - Lưu trữ và xử lý danh sách 📋
 
 Chào các bạn! Trong series này, chúng ta đã đi qua các khái niệm trụ cột của JavaScript. Ở Bài 2, chúng ta đã "giới thiệu sơ lược" về Mảng (Array). Nhưng trên thực tế, Mảng là một chủ đề lớn và vô cùng quan trọng.

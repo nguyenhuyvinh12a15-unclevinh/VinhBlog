@@ -9,8 +9,6 @@ categories: ["Java"]
 slug: "java-dieu-kien-vong-lap"
 ---
 
-{{< figure src="img/java.png" alt="Java logo" caption="Logo ngôn ngữ Java" >}}
-
 ## Giúp chương trình thông minh hơn
 
 Chào mừng các bạn đã quay trở lại với series "Chinh phục Java từ con số 0"! Ở bài học trước, chúng ta đã làm quen với "những viên gạch" cơ bản là biến và kiểu dữ liệu. Chúng ta đã có thể lưu trữ thông tin, nhưng chương trình của chúng ta vẫn còn khá "ngô nghê" - nó chỉ chạy các lệnh từ trên xuống dưới một cách tuần tự.

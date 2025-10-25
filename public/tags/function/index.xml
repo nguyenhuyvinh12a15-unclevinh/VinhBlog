@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Function on HuyVinh&#39;s Blog</title>
-    <link>http://localhost:1313/HuyVinhBlog/tags/function/</link>
+    <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/tags/function/</link>
     <description>Recent content in Function on HuyVinh&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <copyright>HuyVinh&#39;s Blog © 2025</copyright>
     <lastBuildDate>Sat, 25 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/HuyVinhBlog/tags/function/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/tags/function/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bài 3: Hàm (Functions) - Những cỗ máy tái sử dụng</title>
-      <link>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-ham-functions/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-ham-functions/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-ham-functions/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-ham-functions/</guid>
       <description></description>
     </item>
   </channel>

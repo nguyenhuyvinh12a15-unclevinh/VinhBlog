@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript on HuyVinh&#39;s Blog</title>
-    <link>http://localhost:1313/HuyVinhBlog/tags/javascript/</link>
+    <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/tags/javascript/</link>
     <description>Recent content in JavaScript on HuyVinh&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <copyright>HuyVinh&#39;s Blog © 2025</copyright>
     <lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/HuyVinhBlog/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bài 6: Sức mạnh của Mảng (Arrays) - Lưu trữ và xử lý danh sách</title>
-      <link>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-mang-arrays/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-mang-arrays/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-mang-arrays/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-mang-arrays/</guid>
       <description></description>
     </item>
     <item>
       <title>Bài 5: Bắt sự kiện (Events) - Khiến trang web tương tác</title>
-      <link>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-events/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-events/</link>
       <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-events/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-events/</guid>
       <description></description>
     </item>
     <item>
       <title>Bài 4: Giới thiệu về DOM - Khi JavaScript gặp HTML</title>
-      <link>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-dom-interaction/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-dom-interaction/</link>
       <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-dom-interaction/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-dom-interaction/</guid>
       <description></description>
     </item>
     <item>
       <title>Bài 3: Hàm (Functions) - Những cỗ máy tái sử dụng</title>
-      <link>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-ham-functions/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-ham-functions/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-ham-functions/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-ham-functions/</guid>
       <description></description>
     </item>
     <item>
       <title>Bài 2: Biến (var, let, const) và &#34;Trí nhớ&#34; của JavaScript</title>
-      <link>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-bien-kieu-du-lieu/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-bien-kieu-du-lieu/</link>
       <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-bien-kieu-du-lieu/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-bien-kieu-du-lieu/</guid>
       <description></description>
     </item>
     <item>
       <title>Bài 1: Cách JavaScript &#34;giao tiếp&#34; với HTML và &#34;Hello, World!&#34;</title>
-      <link>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-hello-world/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-hello-world/</link>
       <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-hello-world/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/javascript-hello-world/</guid>
       <description></description>
     </item>
     <item>
       <title>JavaScript là gì? Ngôn ngữ giúp trang web của bạn &#34;sống dậy&#34;</title>
-      <link>http://localhost:1313/HuyVinhBlog/posts/javascript/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/</link>
       <pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/HuyVinhBlog/posts/javascript/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/javascript/</guid>
       <description></description>
     </item>
   </channel>

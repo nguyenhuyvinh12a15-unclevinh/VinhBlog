@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vòng Lặp on HuyVinh&#39;s Blog</title>
-    <link>http://localhost:1313/HuyVinhBlog/tags/v%C3%B2ng-l%E1%BA%B7p/</link>
+    <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/tags/v%C3%B2ng-l%E1%BA%B7p/</link>
     <description>Recent content in Vòng Lặp on HuyVinh&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <copyright>HuyVinh&#39;s Blog © 2025</copyright>
     <lastBuildDate>Sat, 25 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/HuyVinhBlog/tags/v%C3%B2ng-l%E1%BA%B7p/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/tags/v%C3%B2ng-l%E1%BA%B7p/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bài 3: Câu lệnh điều kiện và Vòng lặp - Giúp chương trình thông minh hơn</title>
-      <link>http://localhost:1313/HuyVinhBlog/posts/java/java-dieu-kien-vong-lap/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/java/java-dieu-kien-vong-lap/</link>
       <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/HuyVinhBlog/posts/java/java-dieu-kien-vong-lap/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/java/java-dieu-kien-vong-lap/</guid>
       <description></description>
     </item>
   </channel>

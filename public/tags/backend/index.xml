@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Backend on HuyVinh&#39;s Blog</title>
-    <link>http://localhost:1313/HuyVinhBlog/tags/backend/</link>
+    <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/tags/backend/</link>
     <description>Recent content in Backend on HuyVinh&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <copyright>HuyVinh&#39;s Blog © 2025</copyright>
     <lastBuildDate>Tue, 21 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/HuyVinhBlog/tags/backend/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/tags/backend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java là gì? Tại sao &#34;ông hoàng&#34; này vẫn thống trị thế giới lập trình?</title>
-      <link>http://localhost:1313/HuyVinhBlog/posts/java/</link>
+      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/java/</link>
       <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/HuyVinhBlog/posts/java/</guid>
+      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/posts/java/</guid>
       <description></description>
     </item>
   </channel>

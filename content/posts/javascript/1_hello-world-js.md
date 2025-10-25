@@ -9,7 +9,7 @@ categories: ["JavaScript"]
 slug: "javascript-hello-world"
 ---
 
-![Javascript logo](/img/javascript.png)
+![Javascript logo](javascript.png)
 
 ## Bài 1: Cách JavaScript "giao tiếp" với HTML và "Hello, World!" 🚀
 

@@ -9,7 +9,7 @@ categories: ["Java"]
 slug: "java-bien-va-kieu-du-lieu"
 ---
 
-![Java logo](/img/java.png)
+![Java logo](java.png)
 
 ## Bài 2: Biến và Kiểu dữ liệu - Những viên gạch cơ bản
 

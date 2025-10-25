@@ -8,7 +8,7 @@ categories: ["Java"]
 slug: "java-la-gi"
 ---
 
-![Java logo](/img/java.png)
+![Java logo](java.png)
 
 # Java là gì? Tại sao "ông hoàng" này vẫn thống trị thế giới lập trình?
 
@@ -63,7 +63,7 @@ Chào mừng bạn đã đến với thế giới của Java! Trong bài viết 
 
 ## Các bài viết trong series
 
-- **Bài 1:** [Cài đặt môi trường và "Hello, World!" đầu tiên với Java](/posts/java/java-cai-dat-moi-truong-hello-world/)
-- **Bài 2:** [Biến và Kiểu dữ liệu - Những viên gạch cơ bản](/posts/java/java-bien-va-kieu-du-lieu/)
-- **Bài 3:** [Câu lệnh điều kiện và Vòng lặp - Giúp chương trình thông minh hơn](/posts/java/java-dieu-kien-vong-lap/)
-- **Bài 4:** [Lớp (Class) và Đối tượng (Object) - Cốt lõi của OOP](/posts/java/java-class-object/)
+- **Bài 1:** [Cài đặt môi trường và "Hello, World!" đầu tiên với Java](./java-cai-dat-moi-truong-hello-world/)
+- **Bài 2:** [Biến và Kiểu dữ liệu - Những viên gạch cơ bản](./java-bien-va-kieu-du-lieu/)
+- **Bài 3:** [Câu lệnh điều kiện và Vòng lặp - Giúp chương trình thông minh hơn](./java-dieu-kien-vong-lap/)
+- **Bài 4:** [Lớp (Class) và Đối tượng (Object) - Cốt lõi của OOP](./java-class-object/)

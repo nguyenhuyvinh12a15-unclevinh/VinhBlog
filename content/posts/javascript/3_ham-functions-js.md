@@ -9,7 +9,7 @@ categories: ["JavaScript"]
 slug: "javascript-ham-functions"
 ---
 
-![Javascript logo](/img/javascript.png)
+![Javascript logo](javascript.png)
 
 ## Bài 3: Hàm (Functions) - Những cỗ máy tái sử dụng ⚙️
 

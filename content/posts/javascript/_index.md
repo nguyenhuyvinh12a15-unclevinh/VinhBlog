@@ -7,7 +7,9 @@ tags: ["JavaScript", "Lập trình", "Frontend", "Nhập môn"]
 categories: ["JavaScript"]
 slug: "javascript-la-gi"
 ---
-![Javascript logo](/img/javascript.png)
+
+![Javascript logo](javascript.png)
+
 ## JavaScript là gì? Ngôn ngữ giúp trang web của bạn "sống dậy"
 
 Bạn đã bao giờ tự hỏi làm thế nào một trang web có thể hiển thị thông báo, thay đổi nội dung khi bạn nhấn một nút, hay tạo ra những hiệu ứng chuyển động mượt mà chưa? Đằng sau tất cả những "phép màu" đó chính là JavaScript (thường được viết tắt là JS).
@@ -62,9 +64,9 @@ Chào mừng bạn đã đến với thế giới của JavaScript! Trong bài v
 
 ## Các bài viết trong series
 
-- **Bài 1:** [Cách JavaScript "giao tiếp" với HTML và "Hello, World!"](/posts/javascript/javascript-hello-world/)
-- **Bài 2:** [Biến (var, let, const) và "Trí nhớ" của JavaScript](/posts/javascript/javascript-bien-kieu-du-lieu/)
-- **Bài 3:** [Hàm (Functions) - Những cỗ máy tái sử dụng](/posts/javascript/javascript-ham-functions/)
-- **Bài 4:** [Giới thiệu về DOM - Khi JavaScript gặp HTML](/posts/javascript/javascript-dom-interaction/)
-- **Bài 5:** [Bắt sự kiện (Events) - Khiến trang web tương tác](/posts/javascript/javascript-events/)
-- **Bài 6:** [Sức mạnh của Mảng (Arrays) - Lưu trữ và xử lý danh sách](/posts/javascript/javascript-mang-arrays/)
+- **Bài 1:** [Cách JavaScript "giao tiếp" với HTML và "Hello, World!"](./javascript-hello-world/)
+- **Bài 2:** [Biến (var, let, const) và "Trí nhớ" của JavaScript](./javascript-bien-kieu-du-lieu/)
+- **Bài 3:** [Hàm (Functions) - Những cỗ máy tái sử dụng](./javascript-ham-functions/)
+- **Bài 4:** [Giới thiệu về DOM - Khi JavaScript gặp HTML](./javascript-dom-interaction/)
+- **Bài 5:** [Bắt sự kiện (Events) - Khiến trang web tương tác](./javascript-events/)
+- **Bài 6:** [Sức mạnh của Mảng (Arrays) - Lưu trữ và xử lý danh sách](./javascript-mang-arrays/)

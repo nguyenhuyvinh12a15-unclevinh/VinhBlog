@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lập Trình on Congo</title>
+    <link>http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/</link>
+    <description>Recent content in Lập Trình on Congo</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <copyright>HuyVinh&#39;s Blog © 2025</copyright>
+    <lastBuildDate>Wed, 22 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript là gì? Ngôn ngữ giúp trang web của bạn &#34;sống dậy&#34;</title>
+      <link>http://localhost:1313/posts/javascript/</link>
+      <pubDate>Wed, 22 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java là gì? Tại sao &#34;ông hoàng&#34; này vẫn thống trị thế giới lập trình?</title>
+      <link>http://localhost:1313/posts/java/</link>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/java/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

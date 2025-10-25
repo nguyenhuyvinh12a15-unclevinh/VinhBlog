@@ -1,0 +1,65 @@
+/* ======== Chứng nhận - Căn chỉnh hình ảnh ======== */
+.certifications {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.certifications figure {
+  width: 140px !important; /* kích thước đồng nhất */
+  text-align: center;
+  margin: 0 !important;
+}
+
+.certifications figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.certifications figure img:hover {
+  transform: scale(1.05);
+}
+
+.certifications figcaption {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  margin-top: 0.4rem;
+}
+
+/* ======== Custom CSS for Dropdown Menu ======== */
+/* Ẩn menu con theo mặc định */
+.group .group-hover\:block {
+  display: none;
+}
+/* Hiển thị menu con khi di chuột vào mục cha (có class="group") */
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+/* Định dạng cho khung dropdown */
+.dropdown-menu {
+  @apply absolute;
+  @apply bg-neutral dark:bg-neutral-800;
+  @apply shadow-lg;
+  @apply rounded-md;
+  @apply mt-2;
+  @apply py-1;
+  @apply border border-neutral-200 dark:border-neutral-700;
+  min-width: 10rem; /* Đảm bảo menu con có chiều rộng tối thiểu */
+  z-index: 50; /* Đảm bảo menu con nằm trên các phần tử khác */
+}
+
+/* Định dạng cho từng mục con trong dropdown */
+.dropdown-menu a {
+  @apply block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-700;
+}
+.dropdown-menu a:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on HuyVinh&#39;s Blog</title>
+    <link>http://localhost:1313/categories/java/</link>
+    <description>Recent content in Java on HuyVinh&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <copyright>HuyVinh&#39;s Blog © 2025</copyright>
+    <lastBuildDate>Sun, 26 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bài 4: Lớp (Class) và Đối tượng (Object) - Cốt lõi của OOP</title>
+      <link>http://localhost:1313/posts/java/java-class-object/</link>
+      <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/java/java-class-object/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bài 3: Câu lệnh điều kiện và Vòng lặp - Giúp chương trình thông minh hơn</title>
+      <link>http://localhost:1313/posts/java/java-dieu-kien-vong-lap/</link>
+      <pubDate>Sat, 25 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/java/java-dieu-kien-vong-lap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bài 2: Biến và Kiểu dữ liệu - Những viên gạch cơ bản</title>
+      <link>http://localhost:1313/posts/java/java-bien-va-kieu-du-lieu/</link>
+      <pubDate>Fri, 24 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/java/java-bien-va-kieu-du-lieu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bài 1: Cài đặt môi trường và &#34;Hello, World!&#34; đầu tiên với Java</title>
+      <link>http://localhost:1313/posts/java/java-cai-dat-moi-truong-hello-world/</link>
+      <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/java/java-cai-dat-moi-truong-hello-world/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java là gì? Tại sao &#34;ông hoàng&#34; này vẫn thống trị thế giới lập trình?</title>
+      <link>http://localhost:1313/posts/java/</link>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/java/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,111 @@
+<header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    {{/* Logo */}}
+    <div class="z-40 flex flex-row items-center">
+      {{- partial "logo.html" . -}}
+    </div>
+
+    {{/* Mobile menu */}}
+    {{ if .Site.Menus.main }}
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon-menu"></span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon-close"></span
+              ></span>
+            </li>
+            {{ range .Site.Menus.main }}
+              {{ if .HasChildren }}
+                <li class="group mb-1">
+                  <span class="decoration-primary-500">{{ .Name }}</span>
+                  <ul class="list-none">
+                    {{ range .Children }}
+                      <li class="group mb-1">
+                        <a
+                          href="{{ .URL }}"
+                          title="{{ .Title | default .Name }}"
+                          onclick="close_menu()"
+                          {{ if strings.HasPrefix .URL "http" }}
+                            target="_blank" rel="noopener"
+                          {{ end }}
+                          ><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            >{{ .Name }}</span
+                          >
+                        </a>
+                      </li>
+                    {{ end }}
+                  </ul>
+                </li>
+              {{ else }}
+                <li class="group mb-1">
+                  {{- partial "menu-entry.html" . -}}
+                </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      </label>
+    {{ end }}
+
+    {{/* Desktop menu - ĐÂY LÀ PHẦN CHÚNG TA CHỈNH SỬA NHIỀU NHẤT */}}
+    {{ if .Site.Menus.main }}
+      <ul class="hidden list-none flex-row text-end sm:flex">
+        {{ range .Site.Menus.main }}
+          {{/* === LOGIC THEO THẢO LUẬN BẮT ĐẦU TỪ ĐÂY === */}}
+          {{/* 1. Kiểm tra xem mục menu này có "con" không */}}
+          {{ if .HasChildren }}
+            {{/* Nếu CÓ, render nó như một dropdown */}}
+            <li class="group relative mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              {{/* Mục cha, thêm class="group" để CSS nhận diện */}}
+              {{/* Sử dụng thẻ <a> để đồng nhất giao diện, thêm cursor-default để không giống link thường */}}
+              <a href="{{ .URL }}" class="flex cursor-default items-center" {{ if eq .URL "#" }} onclick="return false;" {{ end }}>
+                <span class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2">
+                  {{ .Name }}
+                </span>
+                <span class="icon-down ms-2"></span> {{/* Icon mũi tên xuống */}}
+              </a>
+              {{/* 2. Lặp qua các "con" để hiển thị */}}
+              <ul class="dropdown-menu group-hover:block">
+                {{ range .Children }}
+                  <li>
+                    <a href="{{ .URL }}" title="{{ .Title | default .Name }}" {{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener" {{ end }}>
+                      {{ .Name }}
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+            </li>
+          {{ else }}
+            {{/* Nếu KHÔNG, render nó như một mục menu bình thường */}}
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              {{- partial "menu-entry.html" . -}}
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    {{ end }}
+  </nav>
+</header>
+
+{{- define "partials/menu-entry.html" -}}
+  {{ if .HasChildren }}{{ .Name }}{{ else if .Params.action }}{{- partial (printf "action-%s.html" .Params.action) . -}}{{ else }}<a
+      href="{{ .URL }}"
+      title="{{ .Title | default .Name }}"
+      {{ if strings.HasPrefix .URL "http" }}target="_blank" rel="noopener"{{ end }}
+      ><span
+        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+        >{{ .Name }}</span
+      ></a
+    >{{ end }}
+{{- end -}}

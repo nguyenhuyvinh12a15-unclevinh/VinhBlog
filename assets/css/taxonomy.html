@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <div class="prose max-w-prose dark:prose-invert">
+    {{/* Lấy tiêu đề của trang, ví dụ "Chủ đề" */}}
+    <h1 class="mb-2">{{ .Title }}</h1>
+    {{/* Hiển thị nội dung nếu có */}}
+    {{ with .Content }}
+      <div class="mb-12">{{ . }}</div>
+    {{ end }}
+  </div>
+
+  {{/* 
+    Lặp qua tất cả các "term" (category) trong trang này.
+    .Data.Terms.Alphabetical sẽ sắp xếp theo A-Z (Java, JavaScript).
+    Bạn cũng có thể dùng .Data.Terms.ByCount để sắp xếp theo số lượng bài viết.
+  */}}
+  {{ range .Data.Terms.Alphabetical }}
+    <div class="mt-12">
+      {{/* Hiển thị tên của category, ví dụ "Java" */}}
+      <h2 class="mb-4 text-2xl font-bold">{{ .Page.Title }}</h2>
+
+      {{/* Lặp qua tất cả các bài viết (.Pages) trong category này */}}
+      <ul class="space-y-4">
+        {{ range .Pages }}
+          {{/* Hiển thị link đến từng bài viết */}}
+          {{- partial "list/article-link.html" . -}}
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+{{ end }}

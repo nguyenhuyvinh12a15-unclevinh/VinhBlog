@@ -1,22 +1,19 @@
 name: Deploy Hugo site to GitHub Pages
+
 on:
   push:
-    branches: ["main"] # hoặc master nếu repo của bạn dùng nhánh master
+    branches:
+      - master # Mỗi lần push vào main sẽ tự động deploy
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: true # Nếu bạn dùng theme bằng git submodule
           fetch-depth: 0
 
       - name: Setup Hugo

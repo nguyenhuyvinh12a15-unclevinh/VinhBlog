@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://nguyenhuyvinh12a15-unclevinh.github.io/sitemap.xml
+Sitemap: http://localhost:1313/HuyVinhBlog/sitemap.xml

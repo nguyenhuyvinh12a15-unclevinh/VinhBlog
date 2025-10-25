@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on HuyVinh&#39;s Blog</title>
-    <link>https://nguyenhuyvinh12a15-unclevinh.github.io/categories/</link>
+    <link>http://localhost:1313/HuyVinhBlog/categories/</link>
     <description>Recent content in Categories on HuyVinh&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <copyright>HuyVinh&#39;s Blog © 2025</copyright>
     <lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nguyenhuyvinh12a15-unclevinh.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/HuyVinhBlog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript</title>
-      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/categories/javascript/</link>
+      <link>http://localhost:1313/HuyVinhBlog/categories/javascript/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/categories/javascript/</guid>
+      <guid>http://localhost:1313/HuyVinhBlog/categories/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/categories/java/</link>
+      <link>http://localhost:1313/HuyVinhBlog/categories/java/</link>
       <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/categories/java/</guid>
+      <guid>http://localhost:1313/HuyVinhBlog/categories/java/</guid>
       <description></description>
     </item>
   </channel>

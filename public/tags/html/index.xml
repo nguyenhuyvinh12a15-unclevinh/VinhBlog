@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HTML on HuyVinh&#39;s Blog</title>
-    <link>https://nguyenhuyvinh12a15-unclevinh.github.io/tags/html/</link>
+    <link>http://localhost:1313/HuyVinhBlog/tags/html/</link>
     <description>Recent content in HTML on HuyVinh&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <copyright>HuyVinh&#39;s Blog © 2025</copyright>
     <lastBuildDate>Sun, 26 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://nguyenhuyvinh12a15-unclevinh.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/HuyVinhBlog/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bài 4: Giới thiệu về DOM - Khi JavaScript gặp HTML</title>
-      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/posts/javascript/javascript-dom-interaction/</link>
+      <link>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-dom-interaction/</link>
       <pubDate>Sun, 26 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/posts/javascript/javascript-dom-interaction/</guid>
+      <guid>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-dom-interaction/</guid>
       <description></description>
     </item>
     <item>
       <title>Bài 1: Cách JavaScript &#34;giao tiếp&#34; với HTML và &#34;Hello, World!&#34;</title>
-      <link>https://nguyenhuyvinh12a15-unclevinh.github.io/posts/javascript/javascript-hello-world/</link>
+      <link>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-hello-world/</link>
       <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://nguyenhuyvinh12a15-unclevinh.github.io/posts/javascript/javascript-hello-world/</guid>
+      <guid>http://localhost:1313/HuyVinhBlog/posts/javascript/javascript-hello-world/</guid>
       <description></description>
     </item>
   </channel>

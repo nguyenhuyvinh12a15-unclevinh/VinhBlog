@@ -19,7 +19,7 @@ Vậy, làm thế nào để "lắp" bộ não JavaScript này vào "cơ thể" 
 
 ## JavaScript "sống" ở đâu trên trang HTML?
 
-Giống như một chiếc xe cần hệ thống điện để hoạt động, một trang HTML cần thẻ <script> để "chạy" được mã JavaScript. Có 3 cách chính để thêm hệ thống điện này:
+Giống như một chiếc xe cần hệ thống điện để hoạt động, một trang HTML cần thẻ `<script>` để "chạy" được mã JavaScript. Có 3 cách chính để thêm hệ thống điện này:
 
 ### 1. External Script (File riêng) - Cách chuyên nghiệp (Khuyên dùng)
 

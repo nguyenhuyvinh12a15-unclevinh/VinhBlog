@@ -9,7 +9,7 @@ categories: ["Java"]
 slug: "java-dieu-kien-vong-lap"
 ---
 
-{{< figure src="/img/java.png" alt="Java logo" caption="Logo ngôn ngữ Java" >}}
+{{< figure src="img/java.png" alt="Java logo" caption="Logo ngôn ngữ Java" >}}
 
 ## Giúp chương trình thông minh hơn
 

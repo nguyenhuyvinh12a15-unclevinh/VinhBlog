@@ -3,7 +3,7 @@ title: "Chào mừng đến với blog của Huy Vĩnh! :tada:"
 description: "Nơi mình chia sẻ những kiến thức, kinh nghiệm và cả những câu chuyện trên con đường học hỏi và phát triển trong ngành lập trình."
 ---
 
-![WELCOME](/img/welcome.png)
+![WELCOME](img/welcome.png)
 {{< lead >}}
 Chào mừng bạn đến với blog của mình!
 {{< /lead >}}

@@ -2,7 +2,7 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://jpanther.github.io/congo/docs/getting-started/
 
-baseURL = "https://nguyenhuyvinh.github.io/HuyVinhBlog/"
+baseURL = "https://nguyenhuyvinh12a15-unclevinh.github.io/VinhBlog/"
 defaultContentLanguage = "vi"
 
 enableRobotsTXT = true

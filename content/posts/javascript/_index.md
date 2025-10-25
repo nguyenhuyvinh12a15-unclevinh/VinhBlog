@@ -8,7 +8,7 @@ categories: ["JavaScript"]
 slug: "javascript-la-gi"
 ---
 
-{{< figure src="./img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
+{{< figure src="img/javascript.png" alt="Javascript logo" caption="Logo ngôn ngữ Javascript" >}}
 
 ## JavaScript là gì? Ngôn ngữ giúp trang web của bạn "sống dậy"
 
